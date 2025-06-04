@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>データ出力</title>
+  <meta charset="UTF-8">
+<link href="css/基礎.css" rel="stylesheet">
+<link href="css/タブ.css" rel="stylesheet">
+<link rel="stylesheet" href="charts.min.css">
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/ハンバーガー.js"defer></script>
+<script src="js/タブ.js"defer></script>
+<script src="js/calendar.js"defer></script>
+</head>
+
+<body>
+<div class="hamburger">
+  <img id="menu-icon" src="photo/二海サーモン日記.png" alt="メニューアイコン">
+</div>
+<div id="headline">
+  <h1>データ出力</h1>
+</div>
+
+<h2>年月を選んでCSVダウンロード</h2>
+
+<form action="/download_ym_csv" method="post">
+
+  <label for="id_year">年：</label>
+  <select name="year" id="id_year"></select>
+
+  <label for="id_month">月：</label>
+  <select name="month" id="id_month"></select>
+
+  <br><br>
+  <button type="submit">年月CSVダウンロード</button>
+</form>
+
+<!-- 初期年月設定用（例） -->
+<input type="hidden" id="select-month" value="202305">
+
+
+
+
+
+<!-- メニュー -->
+<nav class="menu" id="menu">
+    <ul>
+      <li><a href="サイトデモ.html">トップ</a></li>
+      <li><a href="データ一覧.html">データ一覧</a></li>
+      <li><a href="月報.html">月報</a></li>
+　　　<li><a href="データ出力.html">データ出力</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

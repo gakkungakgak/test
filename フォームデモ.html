@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<script src="js/calendar.js"defer></script>
+<title>年月プルダウン選択（ネイティブselect版）</title>
+</head>
+<body>
+
+<h2>年月を選んでCSVダウンロード</h2>
+
+<form action="/download_ym_csv" method="post">
+
+  <label for="id_year">年：</label>
+  <select name="year" id="id_year"></select>
+
+  <label for="id_month">月：</label>
+  <select name="month" id="id_month"></select>
+
+  <br><br>
+  <button type="submit">年月CSVダウンロード</button>
+</form>
+
+<!-- 初期年月設定用（例） -->
+<input type="hidden" id="select-month" value="202305">
+
+</body>
+</html>
+
+
