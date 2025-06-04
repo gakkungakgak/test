@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ダウンロードセンター</title>
+</head>
+<body>
+    <h1>ダウンロードセンター</h1>
+    <hr>
+    <h2>外部APIからExcelダウンロード</h2>
+    <p><a href="/download_excel">サーモンデータをExcelでダウンロード</a></p>
+    <hr>
+    <h2>カテゴリ別CSVダウンロード</h2>
+    <form action="/download_csv" method="post">
+        <label for="category">カテゴリ選択:</label>
+        <select name="category" id="category">
+            <option value="students">生徒リスト</option>
+            <option value="products">商品リスト</option>
+        </select>
+        <input type="submit" value="選択したカテゴリのCSVをダウンロード">
+    </form>
+</body>
+</html>
